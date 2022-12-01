@@ -29,16 +29,7 @@ public class 추석_트래픽 {
 		 * 
 		 * 초당 최대 처리량 리턴
 		 */
-		String[] lines = {"2016-09-15 20:59:57.421 0.351s",
-				"2016-09-15 20:59:58.233 1.181s",
-				"2016-09-15 20:59:58.299 0.8s",
-				"2016-09-15 20:59:58.688 1.041s",
-				"2016-09-15 20:59:59.591 1.412s",
-				"2016-09-15 21:00:00.464 1.466s",
-				"2016-09-15 21:00:00.741 1.581s",
-				"2016-09-15 21:00:00.748 2.31s",
-				"2016-09-15 21:00:00.966 0.381s",
-				"2016-09-15 21:00:02.066 2.62s"};
+		String[] lines = {"2016-09-15 01:00:04.002 2.0s", "2016-09-15 01:00:07.000 2s"};
 		
 		System.out.println(solution(lines));
 
@@ -56,15 +47,15 @@ public class 추석_트래픽 {
         	String[] time = line[1].split(":");
         	
         	times[i][1] = Double.parseDouble(time[0]) * 3600 + Double.parseDouble(time[1]) * 60 + Double.parseDouble(time[2]);
-//        	System.out.println(Arrays.toString(time));
-//        	System.out.println(times[i][1]);
-//        	System.out.println(line[2]);
+        	System.out.println(Arrays.toString(time));
+        	System.out.println(times[i][1]);
+        	System.out.println(line[2]);
         	
         	processTimes[i] = Double.parseDouble(line[2].replaceAll("s", ""));
-//        	System.out.println(processTimes[i]);
+        	System.out.println(processTimes[i]);
         	
-        	times[i][0] = Math.round((times[i][1] - processTimes[i] + 0.001) * 1000) / 1000.0;
-        	
+        	times[i][0] =times[i][1] - processTimes[i] + 0.001;
+        	System.out.println(times[i][0]);
         	
         	
         }
@@ -75,6 +66,16 @@ public class 추석_트래픽 {
         
         
         int cnt = 0;
+        
+        for(int i = 0; i < times.length; i++) {
+        	cnt = 1;
+        	for(int j = i + 1; j < times.length; j++) {
+        		if(times[i][1] + 1.0 > times[j][0]) {
+        			cnt++;
+        		}
+        	}
+        	answer = Math.max(cnt, answer);
+        }
         
 //        while(minTime <= maxTime) {
 //        	double endTime = minTime + 1.0;
