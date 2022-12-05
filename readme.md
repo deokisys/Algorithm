@@ -22,4 +22,5 @@
 
 |일정|1|2|3|4|
 |--|--|--|--|--|
-|22.11.28~22.12.5|[LV2코딩테스트 연습 - 타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)| [LV3코딩테스트 연습 - 1차추석 트래픽](https://school.programmers.co.kr/learn/courses/30/lessons/17676)|[LV2코딩테스트 연습 - [1차] 뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)|[LV3코딩테스트 연습 - 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)|
+|1주차 (22.11.28~22.12.5)|[LV2코딩테스트 연습 - 타겟 넘버](https://school.programmers.co.kr/learn/courses/30/lessons/43165)| [LV3코딩테스트 연습 - 1차추석 트래픽](https://school.programmers.co.kr/learn/courses/30/lessons/17676)|[LV2코딩테스트 연습 - [1차] 뉴스 클러스터링](https://school.programmers.co.kr/learn/courses/30/lessons/17677)|[LV3코딩테스트 연습 - 네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)|
+|2주차 (22.12.5~22.12.12)|[LV2게임 맵 최단거리](https://school.programmers.co.kr/learn/courses/30/lessons/1844)|[LV3 가장 긴 팰린드롬](https://school.programmers.co.kr/learn/courses/30/lessons/12904)|[LV2 카카오프렌즈 컬러링북](https://school.programmers.co.kr/learn/courses/30/lessons/1829)|[LV3 선입선출 스케줄링](https://school.programmers.co.kr/learn/courses/30/lessons/12920)|
