@@ -1,4 +1,4 @@
-package day02;
+package week02;
 
 /**
  * @author : sh Lee
