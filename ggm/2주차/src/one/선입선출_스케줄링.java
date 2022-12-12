@@ -35,8 +35,6 @@ public class 선입선출_스케줄링 {
     	}
         
         
-        Arrays.sort(cores);
-        
         
         int timer = min;
         n = n - cores.length;
