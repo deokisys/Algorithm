@@ -27,7 +27,7 @@ class Solution {
                 
                 
                 //현재 인원은 90프로만 
-                int give = (int)Math.round((double)price/10);
+                int give = (int)Math.floor((double)price/10);
                 
                 if(price-give==0){
                     money.put(cur,money.get(cur)+price);
