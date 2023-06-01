@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 import java.math.BigInteger;
 
-public class Main2 {
+public class Main {
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -33,36 +33,44 @@ public class Main2 {
 			//전부 짐
 		//9이면
 			//1먹으면 
+		
 		String dp[] = new String[1001];
 		dp[1] = "CY";
 		dp[2] = "SK";
+		dp[3] = "CY";
 		
 		//sk가 기준으로 진행한다.
 			//1개라도 sk가 이기면 sk가 승리
-		for(int i=3;i<=n;i++) {
+
+		for(int i=4;i<=n;i++) {
+			
 			//1
 			if(i-1>0) {
-				if(dp[i-1].equals("SK")) {
+				if(!dp[i-1].equals("SK")) {
 					dp[i]="SK";
+//					System.out.println(i+" 1번전에 sk승");
 					continue;
 				}
 			}
 			//3
 			if(i-3>0) {
-				if(dp[i-3].equals("SK")) {
+				if(!dp[i-3].equals("SK")) {
 					dp[i]="SK";
+//					System.out.println(i+" 3번전에 sk승");
 					continue;
 				}
 			}
 			//4
 			if(i-4>0) {
-				if(dp[i-4].equals("SK")) {
+				if(!dp[i-4].equals("SK")) {
 					dp[i]="SK";
+//					System.out.println(i+" 4번전에 sk승");
 					continue;
 				}
 			}
 			
 			dp[i] = "CY";
+//			System.out.println(i+" , "+dp[i]);
 		}
 		
 		System.out.println(dp[n]);
